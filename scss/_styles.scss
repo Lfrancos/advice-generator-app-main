@@ -1,0 +1,82 @@
+body {
+    background-color: $color-Dark-Blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    padding: 1rem;
+}
+main {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.card {
+    margin: 0 auto;
+    width: 100%;
+    background-color: $color-Dark-Grayish-Blue;
+    min-width: 343px;
+    max-width: 540px;
+    padding: 2rem;
+    border-radius: .5rem;
+    position: relative;
+}
+h1 {
+    font-size: max(11px, 13px);
+    color: $color-Neon-Green;
+    letter-spacing: .2rem;
+}
+p {
+    font-size: max(24px, 28px);
+    color: $color-Grayish-Blue;
+}
+.text {
+    color: #CEE3E9;
+    margin: 2rem 0;
+    font-size: 24px;
+}
+.break {
+    padding-bottom: 3rem;
+}
+.circle {
+    position: absolute;
+    background-color: $color-Neon-Green;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    img {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover {
+        box-shadow: 0 0 20px  $color-Neon-Green;
+    }
+    &:active {
+        box-shadow: 0 0 30px  $color-Neon-Green;;
+    }
+}
+.attribution {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    bottom: 10px;
+     p {
+         font-size: 11px;
+
+     }
+}
+
+@media (min-width: 600px) {
+    .text {
+        font-size: 28px;
+    }
+}
